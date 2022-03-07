@@ -1,5 +1,5 @@
 :root {
-  --primary-color: rgb(158, 85, 226);
+  --primary-color: #8971b8;
   --dusty-purple: #9597c4;
   --secondery-color: #f5f2fe;
   --shadow: rgba(0, 0, 0, 0.2) 1px 3px 8px;
@@ -53,7 +53,26 @@ image:hover .cart3 {
   margin: 0 auto;
   color: var(--primary-color);
   text-align: center;
-  margin: 15px;
+  margin: 40px;
   padding: 30px;
   font-family: "Poppins", sans-serif;
+}
+.navbar-brand img {
+  max-width: 55px;
+  height: auto;
+  border-radius: 7px;
+}
+
+.categories p {
+  font-size: 25px;
+  padding: 200px;
+  background-color: var(--dusty-purple);
+  border-radius: 4px;
+  opacity: 0.4;
+}
+.categories-title {
+  font-size: 70px;
+  font-weight: 500;
+  margin-top: 45px;
+  color: var(--primary-color);
 }
