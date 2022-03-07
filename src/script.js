@@ -1,12 +1,60 @@
 let carts = document.querySelectorAll(".add-cart");
 
+let products = [
+  {
+    booksName: "The Hating Game",
+    Autor: "Sally Thorn",
+    Year: "2015",
+    Pages: "367",
+    Condition: "Used",
+    Genre: "Drama",
+    Price: 19,
+    inCart: 0,
+  },
+  {
+    booksName: "Before the coffee gets cold",
+    Autor: "Toshikazu Kawaguchi",
+    Year: "2019",
+    Pages: "213",
+    Condition: "New",
+    Genre: "Horror",
+    Price: 19,
+    inCart: 0,
+  },
+];
+
 for (let i = 0; i < carts.length; i++) {
-  carts[i].addEventListener("click", () => addNumbers());
+  carts[i].addEventListener("click", () => cartNumbers(products[i]));
 }
 
-function addNumbers() {
+function onLoadCartNumbers() {
+  let productNumbers = localStorage.getItem("cartNumbers");
+  if (productNumbers) {
+    document.querySelector(".cart span").textContent = productNumbers;
+  }
+}
+
+function cartNumbers(product) {
   let productNumbers = localStorage.getItem("cartNumbers");
   productNumbers = parseInt(productNumbers);
 
-  localStorage.setItem("cartNumbers", 1);
+  if (productNumbers) {
+    localStorage.setItem("cartNumbers", productNumbers + 1);
+    document.querySelector(".cart span").textContent = productNumbers + 1;
+  } else {
+    localStorage.setItem("cartNumbers", 1);
+    document.querySelector(".cart span").textContent = 1;
+  }
+  setItem(product);
 }
+function setItem(product) {
+  console.log("My product is", product);
+  products.inCart = 1;
+
+  let cartIteams = {
+    [products.booksName]: product,
+  };
+  localStorage.setItem("productsInCart", cartIteams);
+  console.log("My product is", product);
+}
+onLoadCartNumbers();
