@@ -48,13 +48,13 @@ function cartNumbers(product) {
   setItem(product);
 }
 function setItem(product) {
-  console.log("My product is", product);
+  let cartIteams = localStorage.getItem("productsInCart");
+  console.log("My cartIteams are", cartIteams);
   products.inCart = 1;
 
-  let cartIteams = {
+  cartIteams = {
     [products.booksName]: product,
   };
-  localStorage.setItem("productsInCart", cartIteams);
-  console.log("My product is", product);
+  localStorage.setItem("productsInCart", JSON.stringify(cartIteams));
 }
 onLoadCartNumbers();

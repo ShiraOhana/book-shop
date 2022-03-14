@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Hating Game</title>
+    <title>Witch Tale book shop</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -22,17 +22,20 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/"><img
-          src="/img/Witch-logo-hands.png"
-          alt="logo-navbar"
-          class="logo-navbar"
-      /></a><strong>Witch's Tale </strong></a>
+        <a class="navbar-brand" href="/home.html"
+          ><img
+            src="/img/Witch-logo-hands.png"
+            alt="logo-navbar"
+            class="logo-navbar" /></a
+        ><a class="navbar-logo-link" href="/home.html"
+          ><strong>Witch Tale </strong></a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -47,51 +50,34 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/home.html"
+              <a class="nav-link active" aria-current="page" href="home.html"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Categories</a>
+              <a class="nav-link" href="/categories.html">Categories</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Best sellers</a>
+              <a class="nav-link" href="/best-sellers.html">Best sellers</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About us</a>
+              <a class="nav-link" href="/about.html">About us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact us</a>
+              <a class="nav-link" href="/contact-us.html">Contact us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link bg-primary text-light" href="/src/cart.html"
-                >🛒Shopping cart</a
+              <a
+                class="cart nav-link bg-primary text-light"
+                href="/src/cart.html"
+                >🛒Shopping cart <span>0</span></a
               >
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="hating-game-wraper">
-      <div class="row">
-        <div class="col-6">
-          <h2>The Hating Game</h2>
-          <p>
-            Autor's name:
-            <br />Year:<br />Pages:<br />Condition:<br />Genre:
-            <span class="badge bg-secondary">Drama</span>
-            <span class="badge bg-secondary">Romance</span>
-            <span class="badge bg-secondary">New</span><br />
-            Price: 19.90$<br />
-            <a class="add-cart btn btn-primary" href="#">Add Cart</a>
-          </p>
-        </div>
-        <div class="col-6">
-          <img src="/img/img3.jpg" alt="The Hating Game" />
-        </div>
-      </div>
-    </div>
-
+    <!-- End of navbar -->
     <script src="src/script.js"></script>
   </body>
 </html>
