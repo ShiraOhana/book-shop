@@ -27,7 +27,9 @@
             src="/img/Witch-logo-hands.png"
             alt="logo-navbar"
             class="logo-navbar" /></a
-        ><a class="navbar-logo-link" href="/home.html"><strong>Witch Tale </strong></a>
+        ><a class="navbar-logo-link" href="/home.html"
+          ><strong>Witch Tale </strong></a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -42,7 +44,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="home.html"
+              <a class="nav-link active" aria-current="page" href="/home.html"
                 >Home</a
               >
             </li>
@@ -70,7 +72,22 @@
       </div>
     </nav>
     <!-- End of navbar -->
-    <h1>Cart</h1>
+        <div class="overlay"></div>
+       
+
+      <div class="container-products">
+        <div class="product-header">
+          <h5 class="product-title">PRODUCT</h5>
+          <h5 class="price sm-hide">PRICE</h5>
+          <h5 class="quantity">QUANTITY</h5>
+          <h5 class="total">TOTAL</h5>
+        </div>
+        <div class="products"></div>
+      </div>
+
+      <script src="main.js"></script>
+      <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    </body>
     <script src="src/script.js"></script>
   </body>
 </html>
